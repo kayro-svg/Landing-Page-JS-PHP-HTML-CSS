@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
+    max-width: 1300px;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -24,34 +25,29 @@
 
 }
 
+.class_header {
+    width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
 header {
-    width: 100%;
+    margin-top: 20px;
+    width: 1100px;
     height: 100px;
     position: fixed;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.135);
     /* Aquí puedes ajustar el nivel de opacidad */
     backdrop-filter: blur(10px);
     /* Ajusta la cantidad de desenfoque */
-}
-
-.header:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    /* Ajusta el grosor del difuminado */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-    filter: blur(10px);
-    /* Ajusta la cantidad de desenfoque */
+    border-radius: 50px;
 }
 
 .container__header {
-    max-width: 1100px;
+    text-align: center;
+    max-width: 1200px;
     height: 100%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,6 +174,7 @@ header {
 
 .btn__text {
     display: block;
+    float: left;
     width: 150px;
     margin-top: 40px;
     padding: 10px 20px;
@@ -332,4 +329,57 @@ header {
     margin-top: 20px;
     cursor: pointer;
     color: var(--color_text-primary);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #ffcc79;
+}
+
+.footer_container {
+    padding: 2rem 3rem;
+}
+
+.footer_title,
+.footer_link {
+    color: #fdf3e4;
+}
+
+.footer_title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer_link:hover {
+    color: #ffffff;
+}
+
+.footer_list {
+    font-size: var(--text_paragraph);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.socialMedia_footer {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    width: 500px;
+
+}
+
+.footer_copy {
+    display: block;
+    margin-top: 1.5rem;
+    color: var(--background-color);
+    text-align: center;
+    font-size: var(--text_paragraph);
 }
