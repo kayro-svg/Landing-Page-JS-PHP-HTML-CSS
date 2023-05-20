@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --color_text-primary: #F89A00;
     --color_text-secondary: #9f6200;
     --color_text-terceario: #cb8e2c;
@@ -20,17 +20,19 @@
     --text_tittle_card: 20px;
     --text_tittle_cardv2: 20px;
     --text_paragraph: 16px;
-    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0, 0, 0, 0.2);
 
 }
 
-header{
+header {
     width: 100%;
     height: 100px;
     position: fixed;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.1); /* Aquí puedes ajustar el nivel de opacidad */
-    backdrop-filter: blur(10px); /* Ajusta la cantidad de desenfoque */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Aquí puedes ajustar el nivel de opacidad */
+    backdrop-filter: blur(10px);
+    /* Ajusta la cantidad de desenfoque */
 }
 
 .header:before {
@@ -39,12 +41,14 @@ header{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20px; /* Ajusta el grosor del difuminado */
+    height: 20px;
+    /* Ajusta el grosor del difuminado */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-    filter: blur(10px); /* Ajusta la cantidad de desenfoque */
+    filter: blur(10px);
+    /* Ajusta la cantidad de desenfoque */
 }
 
-.container__header{
+.container__header {
     max-width: 1100px;
     height: 100%;
     margin: auto;
@@ -52,77 +56,82 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background-color: transparent; /* Establece el fondo del contenido del encabezado como transparente */
+    background-color: transparent;
+    /* Establece el fondo del contenido del encabezado como transparente */
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     position: relative;
     z-index: 1;
 }
 
-.logo img{
+.logo img {
     width: 110px;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
 }
 
-.menu nav{
+.menu nav {
     margin: 0px 20px;
 }
 
-.menu nav ul{
+.menu nav ul {
     display: flex;
 }
 
-.menu nav ul li{
+.menu nav ul li {
     list-style: none;
     margin: 20px 16px;
 }
 
-.menu nav ul li a{
-    color: var(--color_text-secondary); /*variable*/
-    font-size: var(--lowText_font_size); /*variable*/
+.menu nav ul li a {
+    color: var(--color_text-secondary);
+    /*variable*/
+    font-size: var(--lowText_font_size);
+    /*variable*/
     position: relative;
 }
 
-.menu nav ul li a:hover{
-    color: var(--color_text-primary); /*variable*/
+.menu nav ul li a:hover {
+    color: var(--color_text-primary);
+    /*variable*/
 }
 
-.btn__quote{
+.btn__quote {
     display: block;
     padding: 8px 40px;
-    border: 2px solid var(--main_color-primary); /*variable*/
+    border: 2px solid var(--main_color-primary);
+    /*variable*/
     border-radius: 8px;
     font-weight: 500;
     margin: 0px 20px;
 }
 
-.btn__quote:hover{
+.btn__quote:hover {
     color: white;
     background: var(--main_color-primary);
 }
 
-.menu .socialMedia{
+.menu .socialMedia {
     margin: 0px;
 }
 
-.menu .socialMedia a{
+.menu .socialMedia a {
     margin: 0px 4px;
 }
 
-.menu .socialMedia img{
+.menu .socialMedia img {
     width: 30px;
 }
 
 /*portada de inicio*/
 
-.cover_items{
+.cover_items {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -131,7 +140,7 @@ header{
     height: 100%;
 }
 
-.container__cover{
+.container__cover {
     display: flex;
     max-width: 1300px;
     margin: auto;
@@ -140,7 +149,7 @@ header{
     background: var(--main_color-secondary);
 }
 
-.cover{
+.cover {
     max-width: 1300px;
     margin: auto;
     margin-top: 30px;
@@ -149,25 +158,25 @@ header{
     padding: opx 20px;
 }
 
-.text__cover{
+.text__cover {
     width: 100%;
     padding-right: 0px;
     margin-left: 78px;
     margin-right: 0px;
 }
 
-.text__cover h1{
+.text__cover h1 {
     font-size: 28px;
     color: var(--color_text-secondary);
 }
 
-.text__cover p{
+.text__cover p {
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-terceario);
 }
 
-.btn__text{
+.btn__text {
     display: block;
     width: 150px;
     margin-top: 40px;
@@ -182,18 +191,18 @@ header{
     transition: all 300ms;
 }
 
-.btn__text:hover{
+.btn__text:hover {
     background: transparent;
     border: 2px solid var(--main_color-primary);
     color: var(--main_color-primary);
 }
 
-.image__cover{
+.image__cover {
     width: 70%;
     padding-left: -200px;
 }
 
-.image__cover img{
+.image__cover img {
     padding-left: 10px;
     margin-left: 50px;
     width: 700px;
@@ -203,43 +212,43 @@ header{
 
 /*Estilos Generales CARDS*/
 
-.container__card-primary{
+.container__card-primary {
     padding-top: 70px;
 }
 
-.card__primary{
+.card__primary {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
 
-.text__card-primary{
+.text__card-primary {
     max-width: 800px;
     margin: auto;
 }
 
-.text__card-primary p{
+.text__card-primary p {
     color: var(--color_text-primary);
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
 }
 
-.text__card-primary h1{
+.text__card-primary h1 {
     font-size: var(--text_size_tittle);
     font-weight: 600;
     color: var(--color_text-secondary);
 }
 
-.container__box-cardPrimary{
+.container__box-cardPrimary {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
 }
 
-.box__card-primary{
+.box__card-primary {
     max-width: 350px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
@@ -248,33 +257,33 @@ header{
     transition: all 300ms;
 }
 
-.box__card-primary:hover{
+.box__card-primary:hover {
     border: 1px solid transparent;
     box-shadow: var(--box_shadow-primary);
 }
 
-.box__card-primary h2{
+.box__card-primary h2 {
     font-size: var(--text_tittle_card);
     margin-top: 40px;
     font-weight: 500;
 }
 
-.box__card-primary p{
+.box__card-primary p {
     margin-top: 20px;
 }
 
-.box__card-primary img{
+.box__card-primary img {
     margin: 0px 4px;
 }
 
 /*Sobre Nosotros*/
-.container__about{
+.container__about {
     padding: 100px 0px;
     background: var(--background-color);
     margin-top: 100px;
 }
 
-.about{
+.about {
     max-width: 1120px;
     margin: auto;
     padding: 0px 20px;
@@ -283,45 +292,44 @@ header{
     justify-content: center;
 }
 
-.text__about{
+.text__about {
     width: 100%;
     padding-right: 40px;
 }
 
-.text__about h1{
+.text__about h1 {
     color: var(--color_text-secondary);
     font-weight: 600;
 }
 
-.text__about p{
+.text__about p {
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-terceario);
 }
 
-.image__about{
+.image__about {
     width: 100%;
     display: flex;
     margin-left: 200px;
 }
 
-.image__about img{
+.image__about img {
     width: 300px;
     margin: -50px;
     margin-top: 50px;
-    
+
 }
 
 /*Servicios*/
 
-.card__service img{
+.card__service img {
     width: 70px;
 }
 
-.card__service i{
+.card__service i {
     font-size: 30px;
     margin-top: 20px;
     cursor: pointer;
     color: var(--color_text-primary);
 }
-
