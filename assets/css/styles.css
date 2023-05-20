@@ -29,16 +29,30 @@ header{
     height: 100px;
     position: fixed;
     z-index: 100;
+    background-color: rgba(255, 255, 255, 0.1); /* Aquí puedes ajustar el nivel de opacidad */
+    backdrop-filter: blur(10px); /* Ajusta la cantidad de desenfoque */
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Ajusta el grosor del difuminado */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    filter: blur(10px); /* Ajusta la cantidad de desenfoque */
 }
 
 .container__header{
-    max-width: 1200px;
+    max-width: 1100px;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    background-color: transparent; /* Establece el fondo del contenido del encabezado como transparente */
 }
 
 .logo{
@@ -106,16 +120,28 @@ header{
     width: 30px;
 }
 
-/*portda de inicio*/
+/*portada de inicio*/
+
+.cover_items{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    height: 100%;
+}
 
 .container__cover{
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background: var(--main_color-secondary);
 }
 
 .cover{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -125,12 +151,13 @@ header{
 
 .text__cover{
     width: 100%;
-    padding-right: 150px;
-    margin-left: 50px;
+    padding-right: 0px;
+    margin-left: 78px;
+    margin-right: 0px;
 }
 
 .text__cover h1{
-    font-size: 50px;
+    font-size: 28px;
     color: var(--color_text-secondary);
 }
 
@@ -162,18 +189,22 @@ header{
 }
 
 .image__cover{
-    width: 100%;
+    width: 70%;
+    padding-left: -200px;
 }
 
 .image__cover img{
-    width: 1000px;
+    padding-left: 10px;
+    margin-left: 50px;
+    width: 700px;
     opacity: 0.3;
+
 }
 
 /*Estilos Generales CARDS*/
 
 .container__card-primary{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .card__primary{
@@ -244,7 +275,7 @@ header{
 }
 
 .about{
-    max-width: 1200px;
+    max-width: 1120px;
     margin: auto;
     padding: 0px 20px;
     display: flex;
